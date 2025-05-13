@@ -1,5 +1,6 @@
 package com.team1.changup.domain;
 
+import com.team1.changup.domain.common.BaseEntity;
 import com.team1.changup.domain.enums.Roles;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -15,7 +16,7 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class User extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
